@@ -5,7 +5,7 @@ import Header from './components/Header';
 import OverviewTab from './components/OverviewTab';
 import BiomarkersTab from './components/BiomarkersTab';
 import SimulationTab from './components/SimulationTab';
-import DisclaimerFooter from './components/DisclaimerFooter';
+
 import WelcomeModal from './components/WelcomeModal';
 
 const tabs = [
@@ -35,7 +35,7 @@ export default function App() {
   return (
     <div className="min-h-screen">
       <WelcomeModal />
-      <div className="max-w-[540px] mx-auto px-6 pb-32">
+      <div className="max-w-[540px] mx-auto px-6 pb-12">
         <Header userData={userData} dark={dark} setDark={setDark} />
 
         {/* Tabs */}
@@ -74,7 +74,6 @@ export default function App() {
           )}
         </main>
       </div>
-      <DisclaimerFooter />
     </div>
   );
 }
